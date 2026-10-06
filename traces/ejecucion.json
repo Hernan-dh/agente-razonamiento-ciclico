@@ -1,0 +1,10 @@
+{
+  "thread_id": "cliente-102",
+  "consulta": "¿Cuántos pedidos tuvo el cliente 102, cuál fue el total y cuál fue el último?",
+  "eventos": [
+    {"model": [{"type": "ai", "tool_calls": ["buscar_resumen_pedidos", "buscar_ultimo_pedido"]}]},
+    {"tools": [{"tool": "buscar_resumen_pedidos", "resultado": {"pedidos": 3, "total": 14500}}, {"tool": "buscar_ultimo_pedido", "resultado": {"id": 9003, "fecha": "2025-03-18", "total": 5000}}]},
+    {"model": [{"type": "ai", "content": "El cliente 102 tuvo 3 pedidos por un total de $14.500. El último fue el pedido 9003, del 2025-03-18, por $5.000."}]}
+  ],
+  "respuesta_con_memoria": "El último pedido del cliente 102 fue el 9003, del 2025-03-18, por $5.000."
+}
